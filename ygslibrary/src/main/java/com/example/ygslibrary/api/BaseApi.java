@@ -45,7 +45,7 @@ public abstract class BaseApi<T> implements Func1<BaseResultEntity<T>, T> {
         setListener(listener);
         setRxAppCompatActivity(rxAppCompatActivity);
         setShowProgress(true);
-        setCache(false);
+        setCache(true);
     }
 
 
