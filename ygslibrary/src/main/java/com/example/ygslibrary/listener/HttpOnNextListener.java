@@ -1,25 +1,49 @@
 package com.example.ygslibrary.listener;
 
-import java.util.Observable;
+import rx.Observable;
 
+/**
+ * 成功回调处理
+ * Created by WZG on 2016/7/16.
+ */
 public abstract class HttpOnNextListener<T> {
-
-    //请求成功后的回调
+    /**
+     * 成功后回调方法
+     * @param t
+     */
     public abstract void onNext(T t);
 
-    //缓存回调
-    public void onCacheNext(String string){}
+    /**
+     * 緩存回調結果
+     * @param string
+     */
+    public void onCacheNext(String string){
 
-    //成功后的扩展式回调，使用Observable
-    public void onNext(Observable observable){}
+    }
 
-    //失败或者错误方法-主动调用
-    public void onError(Throwable e){}
+    /**
+     * 成功后的ober返回，扩展链接式调用
+     * @param observable
+     */
+    public void onNext(Observable observable){
 
+    }
 
-    // 取消回调
-    public void onCancel(){}
+    /**
+     * 失败或者错误方法
+     * 主动调用，更加灵活
+     * @param e
+     */
+    public  void onError(Throwable e){
 
+    }
+
+    /**
+     * 取消回調
+     */
+    public void onCancel(){
+
+    }
 
 
 }
