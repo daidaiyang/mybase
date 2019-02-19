@@ -1,9 +1,10 @@
 package com.mybaseapp.entity.api;
 
-import com.example.retrofit.HttpUploadService;
+
+import com.example.ygslibrary.api.BaseApi;
+import com.example.ygslibrary.listener.HttpOnNextListener;
+import com.mybaseapp.HttpUploadService;
 import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
-import com.wzgiceman.rxretrofitlibrary.retrofit_rx.Api.BaseApi;
-import com.wzgiceman.rxretrofitlibrary.retrofit_rx.listener.HttpOnNextListener;
 
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;

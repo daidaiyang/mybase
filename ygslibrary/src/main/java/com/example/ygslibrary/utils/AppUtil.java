@@ -17,13 +17,12 @@ public class AppUtil {
      */
     public static boolean isNetworkAvailable(Context context) {
         try {
-            ConnectivityManager connectivity = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
-            if (connectivity != null) {
-                NetworkInfo info = connectivity.getActiveNetworkInfo();
-                if (info != null && info.isConnected()) {
-                    if (info.getState() == NetworkInfo.State.CONNECTED) {
-                        return true;
-                    }
+            if (context != null) {
+                ConnectivityManager mConnectivityManager = (ConnectivityManager) context
+                        .getSystemService(Context.CONNECTIVITY_SERVICE);
+                NetworkInfo mNetworkInfo = mConnectivityManager.getActiveNetworkInfo();
+                if (mNetworkInfo != null) {
+                    return mNetworkInfo.isAvailable();
                 }
             }
         } catch (Exception e) {

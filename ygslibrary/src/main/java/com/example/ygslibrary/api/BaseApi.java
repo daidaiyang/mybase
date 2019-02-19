@@ -23,7 +23,7 @@ public abstract class BaseApi<T> implements Func1<BaseResultEntity<T>, T> {
     //是否需要缓存处理
     private boolean cache;
     //基础URL
-    private String baseUrl = "";
+    private String baseUrl = "http://www.izaodao.com/Api/";
     //方法名-缓存必须设置、
     private String method = "";
     //超时时间-6秒
@@ -45,7 +45,7 @@ public abstract class BaseApi<T> implements Func1<BaseResultEntity<T>, T> {
         setListener(listener);
         setRxAppCompatActivity(rxAppCompatActivity);
         setShowProgress(true);
-        setCache(true);
+        setCache(false);
     }
 
 

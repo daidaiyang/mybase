@@ -6,12 +6,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.daimajia.numberprogressbar.NumberProgressBar;
-import com.example.retrofit.R;
+import com.example.ygslibrary.download.DownInfo;
+import com.example.ygslibrary.download.DownState;
+import com.example.ygslibrary.download.HttpDownManager;
+import com.example.ygslibrary.listener.HttpDownOnNextListener;
 import com.jude.easyrecyclerview.adapter.BaseViewHolder;
-import com.wzgiceman.rxretrofitlibrary.retrofit_rx.download.DownInfo;
-import com.wzgiceman.rxretrofitlibrary.retrofit_rx.download.DownState;
-import com.wzgiceman.rxretrofitlibrary.retrofit_rx.download.HttpDownManager;
-import com.wzgiceman.rxretrofitlibrary.retrofit_rx.listener.HttpDownOnNextListener;
+import com.mybaseapp.R;
 
 /**
  * 下载item

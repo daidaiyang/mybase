@@ -4,10 +4,10 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.ygslibrary.RxRetrofitApp;
+import com.example.ygslibrary.download.DaoMaster;
+import com.example.ygslibrary.download.DaoSession;
 import com.example.ygslibrary.http.cookie.CookieResulte;
 import com.example.ygslibrary.http.cookie.CookieResulteDao;
-import com.example.ygslibrary.http.cookie.DaoMaster;
-import com.example.ygslibrary.http.cookie.DaoSession;
 
 import org.greenrobot.greendao.query.QueryBuilder;
 

@@ -1,7 +1,7 @@
 package com.mybaseapp;
 
-import com.example.retrofit.entity.resulte.UploadResulte;
-import com.wzgiceman.rxretrofitlibrary.retrofit_rx.Api.BaseResultEntity;
+import com.example.ygslibrary.api.BaseResultEntity;
+import com.mybaseapp.entity.resulte.UploadResulte;
 
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;

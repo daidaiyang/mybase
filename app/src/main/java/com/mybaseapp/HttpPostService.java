@@ -1,8 +1,8 @@
 package com.mybaseapp;
 
-import com.example.retrofit.entity.resulte.RetrofitEntity;
-import com.example.retrofit.entity.resulte.SubjectResulte;
-import com.wzgiceman.rxretrofitlibrary.retrofit_rx.Api.BaseResultEntity;
+import com.example.ygslibrary.api.BaseResultEntity;
+import com.mybaseapp.entity.resulte.RetrofitEntity;
+import com.mybaseapp.entity.resulte.SubjectResulte;
 
 import java.util.List;
 

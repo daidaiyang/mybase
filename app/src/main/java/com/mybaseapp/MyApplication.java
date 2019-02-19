@@ -3,7 +3,7 @@ package com.mybaseapp;
 import android.app.Application;
 import android.content.Context;
 
-import com.wzgiceman.rxretrofitlibrary.retrofit_rx.RxRetrofitApp;
+import com.example.ygslibrary.RxRetrofitApp;
 
 /**
  * Created by WZG on 2016/10/25.

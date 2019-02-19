@@ -4,12 +4,11 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
-
-import com.example.retrofit.R;
-import com.example.retrofit.activity.adapter.DownAdapter;
+import com.example.ygslibrary.download.DownInfo;
+import com.example.ygslibrary.utils.DbDownUtil;
 import com.jude.easyrecyclerview.EasyRecyclerView;
-import com.wzgiceman.rxretrofitlibrary.retrofit_rx.download.DownInfo;
-import com.wzgiceman.rxretrofitlibrary.retrofit_rx.utils.DbDownUtil;
+import com.mybaseapp.R;
+import com.mybaseapp.activity.adapter.DownAdapter;
 
 import java.io.File;
 import java.util.List;

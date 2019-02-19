@@ -1,9 +1,10 @@
 package com.mybaseapp.entity.api;
 
-import com.example.retrofit.HttpPostService;
+
+import com.example.ygslibrary.api.BaseApi;
+import com.example.ygslibrary.listener.HttpOnNextListener;
+import com.mybaseapp.HttpPostService;
 import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
-import com.wzgiceman.rxretrofitlibrary.retrofit_rx.Api.BaseApi;
-import com.wzgiceman.rxretrofitlibrary.retrofit_rx.listener.HttpOnNextListener;
 
 import retrofit2.Retrofit;
 import rx.Observable;
@@ -32,8 +33,8 @@ public class SubjectPostApi extends BaseApi {
         super(listener,rxAppCompatActivity);
         setShowProgress(true);
         setCancel(true);
-        setCache(true);
-        setMethod("AppFiftyToneGraph/videoLink");
+//        setCache(true);
+//        setMethod("AppFiftyToneGraph/videoLink");
         setCookieNetWorkTime(60);
         setCookieNoNetWorkTime(24*60*60);
     }

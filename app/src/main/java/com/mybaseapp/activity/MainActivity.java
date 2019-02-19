@@ -12,21 +12,21 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.daimajia.numberprogressbar.NumberProgressBar;
-import com.example.retrofit.HttpPostService;
-import com.example.retrofit.R;
-import com.example.retrofit.entity.api.SubjectPostApi;
-import com.example.retrofit.entity.api.UploadApi;
-import com.example.retrofit.entity.resulte.RetrofitEntity;
-import com.example.retrofit.entity.resulte.SubjectResulte;
-import com.example.retrofit.entity.resulte.UploadResulte;
+import com.example.ygslibrary.api.BaseResultEntity;
+import com.example.ygslibrary.http.HttpManager;
+import com.example.ygslibrary.listener.HttpOnNextListener;
+import com.example.ygslibrary.listener.upload.ProgressRequestBody;
+import com.example.ygslibrary.listener.upload.UploadProgressListener;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.mybaseapp.HttpPostService;
+import com.mybaseapp.R;
+import com.mybaseapp.entity.api.SubjectPostApi;
+import com.mybaseapp.entity.api.UploadApi;
+import com.mybaseapp.entity.resulte.RetrofitEntity;
+import com.mybaseapp.entity.resulte.SubjectResulte;
+import com.mybaseapp.entity.resulte.UploadResulte;
 import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
-import com.wzgiceman.rxretrofitlibrary.retrofit_rx.Api.BaseResultEntity;
-import com.wzgiceman.rxretrofitlibrary.retrofit_rx.http.HttpManager;
-import com.wzgiceman.rxretrofitlibrary.retrofit_rx.listener.HttpOnNextListener;
-import com.wzgiceman.rxretrofitlibrary.retrofit_rx.listener.upload.ProgressRequestBody;
-import com.wzgiceman.rxretrofitlibrary.retrofit_rx.listener.upload.UploadProgressListener;
 
 import java.io.File;
 import java.util.List;
@@ -139,7 +139,7 @@ public class MainActivity extends RxAppCompatActivity implements View.OnClickLis
                             public void onProgress(final long currentBytesCount, final long totalBytesCount) {
 
                                 /*回到主线程中，可通过timer等延迟或者循环避免快速刷新数据*/
-                                Observable.just(currentBytesCount).observeOn(AndroidSchedulers.mainThread()).subscribe(new Action1<Long>() {
+                                rx.Observable.just(currentBytesCount).observeOn(AndroidSchedulers.mainThread()).subscribe(new Action1<Long>() {
 
                                     @Override
                                     public void call(Long aLong) {
